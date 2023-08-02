@@ -408,6 +408,11 @@ footer {
   }
 }
 
+.footer-navbar{
+  max-width: 464px;
+  
+}
+
 .footer-social {
   gap: 32px;
   @media (max-width: 768px) {
