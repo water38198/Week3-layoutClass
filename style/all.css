@@ -1,0 +1,448 @@
+/* 全域設定 */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+body {
+  line-height: 1.5;
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+
+/* 自訂義 */
+.container {
+  max-width: 1320px;
+  padding: 0 12px;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    padding: 0 36px;
+  }
+  @media (max-width: 375px) {
+    padding: 0 14px;
+  }
+}
+
+/* 背景 */
+.bg-primary {
+  background-color: #aa0601;
+}
+.bg-secondary {
+  background-color: #fbf2f2;
+}
+.bg-white {
+  background: #fff;
+}
+
+/* 排版 */
+.block{
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+@media (max-width:768px) {
+  .block-md{
+    display: block;
+  }
+}
+@media (max-width:375px) {
+  .none-sm{
+    display: none;
+  }
+  .block-sm{
+    display: block;
+  }
+  .justify-content-sm-center {
+    justify-content: center;
+  }
+}
+
+/* 寬度 */
+.w-100{
+  width: 100%;
+}
+
+/* 文字樣式 */
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-none {
+  text-decoration: none;
+}
+.text-white {
+  color: #fff;
+}
+.text-primary {
+  color: #650300;
+}
+.text-red {
+  color: #aa0601;
+}
+.text-italic {
+  font-style: italic;
+}
+
+/* 文字大小 */
+.fs-14 {
+  font-size: 14px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-36 {
+  font-size: 36px;
+}
+.fs-48 {
+  font-size: 48px;
+}
+.fs-64 {
+  font-size: 64px;
+}
+@media (max-width:768px) {
+  .fs-md-16{
+    font-size: 16px;
+  }
+}
+@media (max-width:375px) {
+  .fs-sm-16 {
+    font-size: 16px;
+  }
+  .fs-sm-24 {
+    font-size: 24px;
+  }
+}
+
+/* 間距 */
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.mr-48{
+  margin-right: 48px;
+}
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+@media (max-width:768px) {
+  .py-md-36 {
+    padding-right: 36px;
+    padding-bottom: 36px;
+  }
+  .mb-md-24{
+    margin-bottom: 24px;
+  }
+}
+@media (max-width:375px) {
+  .p-sm-0{
+    padding: 0;
+  }
+  .py-sm-40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .mb-sm-8 {
+    margin-bottom: 8px;
+  }
+  .mb-sm-24 {
+    margin-bottom: 24px;
+  }
+}
+
+/* 各個區塊 */
+.section-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 48px;
+  @media (max-width: 375px) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+header img {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  @media (max-width: 375px) {
+    margin-left: 15px;
+  }
+}
+header ul{
+  max-width: 492px;
+}
+header li {
+  @media (max-width: 375px) {
+    width: 50%;
+    padding: 11px 0;
+    border: 1px solid white;
+  }
+}
+
+.banner {
+  background-image: url(../img/home-header.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 296px;
+  padding-bottom: 296px;
+  @media (max-width: 375px) {
+    background-image: url(../img/home-header-sm.png);
+    padding: 144px 0;
+  }
+}
+.banner a {
+  display: inline-block;
+  padding: 6px 12px;
+}
+
+.intro li {
+  width: calc(25% - 18px);
+  @media (max-width: 768px) {
+    width: calc(50% - 12px);
+  }
+  @media (max-width: 375px) {
+    width: 100%;
+  }
+}
+.intro img {
+  width: 100px;
+}
+
+.classic li {
+  width: calc((100% - 48px) / 3);
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.classic img{
+    @media (max-width: 768px) {
+        width: 336px;
+      }
+}
+
+.feat {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background-position:center;
+  background-size: cover;
+  @media (max-width: 375px) {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+  }
+}
+.feat-image {
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
+.feat-image-sm {
+  display: none;
+  @media (max-width: 375px) {
+    display: block;
+  }
+}
+.feat p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.recommend li {
+  width: calc(25% - 18px);
+  @media (max-width: 768px) {
+    width: calc(50% - 12px);
+  }
+  @media (max-width: 375px) {
+    width: 100%;
+  }
+}
+.recommend-text {
+  padding: 16px;
+  box-shadow: 0px 2px 6px #00000029;
+  border-radius: 4px;
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+}
+.recommend-text p:first-child {
+  font-weight: 500;
+}
+.recommend-text p:last-child {
+  color: #707070;
+  margin-top:auto;
+}
+
+
+.contact-input-group input,
+.contact-input-group textarea {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 1px solid #000;
+}
+.agreement {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 22px;
+}
+
+/* Hide the browser's default checkbox */
+.agreement input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.agreement input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.agreement .checkmark:after {
+  left: 3px;
+  top: 0px;
+  width: 4px;
+  height: 8px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+form::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.submit {
+  border: 0;
+  padding: 16px 176px;
+  font-size: 16px;
+
+  @media (max-width: 768px) {
+    padding: 16px 136px;
+  }
+}
+.submit:hover {
+  cursor: pointer;
+  background: #650300;
+}
+
+footer {
+  padding-top: 48px;
+  padding-bottom: 32px;
+  @media (max-width: 768px) {
+    padding-bottom: 40px;
+  }
+  @media (max-width:375px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+.footer-contact {
+  @media (max-width: 375px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+
+.footer-social {
+  gap: 32px;
+  @media (max-width: 768px) {
+    gap: 16px;
+  }
+  @media (max-width: 375px) {
+    gap: 8px;
+  }
+}
+.footer-social img {
+  width: 48px;
+  @media (max-width: 768px) {
+    width: 40px;
+  }
+  @media (max-width: 375px) {
+    width: 24px;
+  }
+}
+.footer-info {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.footer-info p {
+  @media (max-width: 375px) {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+.footer-info span {
+  margin-right: 16px;
+  @media (max-width: 375px) {
+    margin-right: 8px;
+  }
+}
+footer hr {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  @media (max-width:375px) {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+  }
+}
+.copyright p{
+  margin-right: auto;
+}
+
