@@ -309,7 +309,14 @@ header li {
   margin-top:auto;
 }
 
+.contact-content {
+  max-width: 636px;
+  margin: 0 auto;
 
+  @media(max-width:768px) {
+    max-width: 576px;
+  }
+}
 .contact-input-group input,
 .contact-input-group textarea {
   width: 100%;
